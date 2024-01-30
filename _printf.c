@@ -21,12 +21,12 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	Check:
+Check:
 
 	while (format[i] != '\0')
 	{
-		j=2;
-		while (j>=0)
+		j = 2;
+		while (j >= 0)
 		{
 			if (p[j].ph[0] == format[i] && p[j].ph[1] == format[i + 1])
 			{

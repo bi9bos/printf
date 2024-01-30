@@ -17,7 +17,7 @@ typedef struct format
 {
 	char *ph;
 	int (*function)();
-}convert;
+} convert;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
